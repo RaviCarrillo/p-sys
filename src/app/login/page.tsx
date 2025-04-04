@@ -38,7 +38,7 @@ export default function Login() {
               <Label htmlFor="username">Usuário</Label>
               <Input
                 id="username"
-                placeholder="psi_teste01"
+                placeholder="USUARIO"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
               />
@@ -48,7 +48,7 @@ export default function Login() {
               <Input
                 id="password"
                 type="password"
-                placeholder="asdf1234"
+                placeholder="SENHA"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />

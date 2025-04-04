@@ -19,7 +19,29 @@ export interface User {
   };
 }
 
-export const testUsers: User[] = Array.from({ length: 10 }, (_, i) => {
+const generateDefaultUser = (username: string, name: string): User => ({
+  id: `user_${username.replace('.', '_')}`,
+  username,
+  password: 'asdf1234',
+  name,
+  email: `${username.replace('.', '_')}@exemplo.com`,
+  birthDate: '1990-01-01',
+  cpf: '000.000.000-00',
+  crp: '00/000000',
+  phone: '(00) 00000-0000',
+  address: {
+    street: 'Rua Exemplo',
+    number: '123',
+    complement: 'Sala 1',
+    neighborhood: 'Centro',
+    city: 'São Paulo',
+    state: 'SP',
+    zipCode: '00000-000',
+  },
+});
+
+// Usuários gerados automaticamente
+const autoUsers: User[] = Array.from({ length: 10 }, (_, i) => {
   const number = (i + 1).toString().padStart(2, '0');
   return {
     id: `user_${number}`,
@@ -41,4 +63,15 @@ export const testUsers: User[] = Array.from({ length: 10 }, (_, i) => {
       zipCode: '00000-000',
     },
   };
-}); 
+});
+
+// Novos usuários adicionados manualmente
+const manualUsers: User[] = [
+  generateDefaultUser('paula.duarte', 'Paula Duarte'),
+  generateDefaultUser('leandro.santos', 'Leandro Santos'),
+  generateDefaultUser('nathalia.pimenta', 'Nathalia Pimenta'),
+  generateDefaultUser('ravi.carrillo', 'Ravi Carrillo'),
+];
+
+// Combinando todos os usuários
+export const testUsers: User[] = [...autoUsers, ...manualUsers]; 
