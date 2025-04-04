@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && touch out/.nojekyll && git add -f out/ && git commit -m \"Deploy to gh-pages\" && git push origin `git subtree split --prefix out main`:gh-pages --force"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",

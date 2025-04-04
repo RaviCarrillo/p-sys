@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ravicarrillo.github.io/p-sys/sitemap.xml 

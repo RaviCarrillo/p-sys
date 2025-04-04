@@ -12,7 +12,13 @@ import { ProtectedRoute } from "@/components/protected-route";
 import { useAppointments } from "@/contexts/appointments-context";
 import { useState, useEffect } from "react";
 
-export default function EditarConsulta({ params }: { params: { id: string } }) {
+interface PageProps {
+  params: {
+    id: string
+  }
+}
+
+export default function EditarConsulta({ params }: PageProps) {
   const router = useRouter();
   const { appointments, updateAppointment } = useAppointments();
   const [formData, setFormData] = useState({
