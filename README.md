@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# P-Sys - Sistema de Gestão para Psicólogos
 
-## Getting Started
+Sistema inteligente para gerenciamento de consultas, pacientes e finanças para psicólogos.
 
-First, run the development server:
+## Funcionalidades
 
+- 🗓️ Agenda Inteligente
+- 👥 Gestão de Pacientes
+- 💰 Controle Financeiro
+- 📊 Dashboard Personalizado
+- 🌙 Modo Claro/Escuro
+
+## Tecnologias Utilizadas
+
+- Next.js 14
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+- Lucide Icons
+
+## Como Executar o Projeto
+
+1. Clone o repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/seu-usuario/p-sys.git
+cd p-sys
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências:
+```bash
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Execute o projeto em modo de desenvolvimento:
+```bash
+npm run dev
+# ou
+yarn dev
+# ou
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-## Learn More
+## Estrutura do Projeto
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/                    # Páginas da aplicação
+├── components/            # Componentes reutilizáveis
+├── contexts/             # Contextos React
+├── lib/                  # Utilitários e configurações
+└── styles/              # Estilos globais
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contribuição
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
 
-## Deploy on Vercel
+## Licença
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
